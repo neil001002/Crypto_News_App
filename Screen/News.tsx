@@ -20,10 +20,10 @@ const News = ({}) => {
 
   function getNewsFromAPI() {
     newsAPI
-      .get("top-headlines?country=us&apiKey=f08f0a610915445b89739684b1217bc4")
+      .get("top-headlines?country=in&apiKey=f08f0a610915445b89739684b1217bc4")
       .then(async function (response) {
         setNews(response.data);
-        console.log(response.data.articles);
+        // console.log(response.data.articles);
       })
       .catch(function (error) {
         console.log(error);
@@ -35,7 +35,7 @@ const News = ({}) => {
   }
 
   return (
-    <View>
+    <View style={{ backgroundColor: "white" }}>
       <FlatList
         data={news.articles}
         keyExtractor={(item, index) => "key" + index}
