@@ -1,0 +1,16 @@
+npm install @react-navigation/native
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+npm install @react-navigation/stack
+
+npm install --save react-navigation-stack react-navigation-tabs
+
+npm install react-native-safe-area-view react-native-safe-area-context && react-native link react-native-safe-area-context
+
+npm install @react-native-community/masked-view
+
+npm install react-native-screens
+
+npm install react-navigation
+

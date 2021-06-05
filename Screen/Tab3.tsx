@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Button, FlatList } from "react-native";
 import NewsCard from "../Components/NewsCard";
 import newsAPI from "../apis/News";
 
-const News = ({}) => {
+const Tab3 = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,9 @@ const News = ({}) => {
 
   function getNewsFromAPI() {
     newsAPI
-      .get("top-headlines?country=in&apiKey=f08f0a610915445b89739684b1217bc4")
+      .get(
+        "everything?q=ethereum&sortBy=publishedAt&language=en&apiKey=f08f0a610915445b89739684b1217bc4"
+      )
       .then(async function (response) {
         setNews(response.data);
         // console.log(response.data.articles);
@@ -47,4 +49,4 @@ const News = ({}) => {
   );
 };
 
-export default News;
+export default Tab3;
