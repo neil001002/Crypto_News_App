@@ -8,15 +8,7 @@ const Tab3 = () => {
 
   useEffect(() => {
     getNewsFromAPI();
-    // newsResponse();
   }, []);
-
-  // const newsResponse = async () => {
-  //   const response = await newsAPI.get(
-  //     "top-headlines?country=us&apiKey=f08f0a610915445b89739684b1217bc4"
-  //   );
-  //   console.log(response.data);
-  // };
 
   function getNewsFromAPI() {
     newsAPI
@@ -25,7 +17,6 @@ const Tab3 = () => {
       )
       .then(async function (response) {
         setNews(response.data);
-        // console.log(response.data.articles);
       })
       .catch(function (error) {
         console.log(error);

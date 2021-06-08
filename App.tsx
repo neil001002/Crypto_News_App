@@ -17,7 +17,7 @@ function Home() {
     <Tab.Navigator
       tabBarOptions={{
         style: {
-          backgroundColor: "red",
+          // backgroundColor: "red",
           borderBottomStartRadius: 15,
           borderBottomEndRadius: 15,
         },
